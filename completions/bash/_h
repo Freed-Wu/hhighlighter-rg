@@ -1,0 +1,33 @@
+# h(1) completion                                        -*- shell-script -*-
+
+_h(){
+  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local prev="${COMP_WORDS[COMP_CWORD - 1]}"
+  if [ "$prev" = -C ]; then
+    colors='red
+    green
+    yellow
+    blue
+    magenta
+    cyan
+    white
+    black'
+    COMPREPLY=( $(compgen -W "${colors[*]}" -- "$cur") )
+    return 0
+  fi
+  case $cur in
+    -)
+      opts="-i
+      -w
+      -F
+      -P
+      -C
+      -n
+      -h
+      -V"
+      COMPREPLY=( $(compgen -W "${opts[*]}" -- "$cur") )
+  esac
+} &&
+  complete -F _h h
+
+# ex: filetype=sh
