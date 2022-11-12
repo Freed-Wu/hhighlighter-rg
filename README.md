@@ -3,6 +3,7 @@
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/hhighlighter-rg/main.svg)](https://results.pre-commit.ci/latest/github/Freed-Wu/hhighlighter-rg/main)
 [![github/workflow](https://github.com/Freed-Wu/hhighlighter-rg/actions/workflows/main.yml/badge.svg)](https://github.com/Freed-Wu/hhighlighter-rg/actions)
 [![codecov](https://codecov.io/gh/Freed-Wu/hhighlighter-rg/branch/main/graph/badge.svg)](https://codecov.io/gh/Freed-Wu/hhighlighter-rg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg?ref=badge_shield)
 
 [![github/downloads](https://shields.io/github/downloads/Freed-Wu/hhighlighter-rg/total)](https://github.com/Freed-Wu/hhighlighter-rg/releases)
 [![github/downloads/latest](https://shields.io/github/downloads/Freed-Wu/hhighlighter-rg/latest/total)](https://github.com/Freed-Wu/hhighlighter-rg/releases/latest)
@@ -66,3 +67,7 @@ Usage: PROGRAM | h [OPTS] ARGS...
 - [bash](https://www.gnu.org/software/bash/)
 - [GNU coreutils](https://www.gnu.org/software/coreutils/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg?ref=badge_large)
