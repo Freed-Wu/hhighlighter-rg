@@ -16,6 +16,10 @@ jobs:
       - uses: mig4/setup-bats@v1
       # https://github.com/mig4/setup-bats/issues/67
       - uses: brokenpip3/setup-bats-libs@0.1.0
+      - name: Install dependencies
+        run: |
+          apt-get -y update
+          apt-get -y install ripgrep
       - name: Unit test
         run: |
           bats -r .
