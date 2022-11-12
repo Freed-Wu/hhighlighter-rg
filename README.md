@@ -33,6 +33,7 @@
 
 - [Usage](#usage)
 - [Requirements](#requirements)
+- [License](#license)
 
 <!-- mdformat-toc end -->
 
@@ -68,6 +69,6 @@ Usage: PROGRAM | h [OPTS] ARGS...
 - [GNU coreutils](https://www.gnu.org/software/coreutils/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep/)
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FFreed-Wu%2Fhhighlighter-rg?ref=badge_large)
