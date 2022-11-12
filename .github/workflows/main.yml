@@ -28,7 +28,7 @@ jobs:
           sudo apt-get -y update && sudo apt-get -y install ripgrep
       - name: Test
         run: |
-          bundle exec bashcov -- bats -r .
+          TMPDIR=/tmp bundle exec bashcov -- bats -r .
       - name: Upload reports to Codecov
         run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
