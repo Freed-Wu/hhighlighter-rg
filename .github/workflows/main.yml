@@ -18,8 +18,8 @@ jobs:
       - uses: brokenpip3/setup-bats-libs@0.1.0
       - name: Install dependencies
         run: |
-          apt-get -y update
-          apt-get -y install ripgrep
+          sudo apt-get -y update
+          sudo apt-get -y install ripgrep
       - name: Unit test
         run: |
           bats -r .
