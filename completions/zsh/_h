@@ -1,0 +1,13 @@
+#compdef h
+# shellcheck disable=all
+
+_arguments -s -S \
+  '(- : *)-V[Show version]' \
+  '(- : *)-h[Show list of command-line options]' \
+  '-n[dry run]' \
+  '-C[highlight color format]:(red green yellow blue magenta cyan white black)' \
+  '-i[search case-insensitively]' \
+  '-w[only show matches surrounded by word boundaries]' \
+  '-F[treat pattern as literal string]' \
+  '-P[enable matching with PCRE2]' \
+  '(- :)*:args'
