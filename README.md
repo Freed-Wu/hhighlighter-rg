@@ -41,6 +41,8 @@ use [ripgrep](https://github.com/BurntSushi/ripgrep/) not
 
 ![screenshot](https://user-images.githubusercontent.com/32936898/201461185-b66e8c2a-14e4-42c7-9509-6ccdfc8d5998.png)
 
+The commands in the screenshot can be found in [unit test](test/test.bats).
+
 ## Usage
 
 ```shell
