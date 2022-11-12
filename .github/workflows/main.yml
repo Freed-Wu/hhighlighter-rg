@@ -16,13 +16,6 @@ jobs:
       - uses: mig4/setup-bats@v1
       # https://github.com/mig4/setup-bats/issues/67
       - uses: brokenpip3/setup-bats-libs@0.1.0
-      - name: Install dependencies
-        run: |
-          sudo apt-get -y update
-          sudo apt-get -y install ripgrep
-      - name: Unit test
-        run: |
-          bats -r .
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.0"
@@ -30,9 +23,12 @@ jobs:
       - name: Install Ruby dependencies
         run: |
           bundle update --bundler && bundle install
-      - name: Coverage test
+      - name: Install dependencies
         run: |
-          bashcov -- bats -r .
+          sudo apt-get -y update && sudo apt-get -y install ripgrep
+      - name: Test
+        run: |
+          bundle exec bashcov -- bats -r .
       - name: Upload reports to Codecov
         run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
