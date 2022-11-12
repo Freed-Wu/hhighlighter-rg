@@ -26,11 +26,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get -y update && sudo apt-get -y install ripgrep
+      # https://github.com/Freed-Wu/hhighlighter-rg/actions/runs/3450224257/jobs/5758684620#step:8:5
       - name: Test
         run: |
           TMPDIR=/tmp bundle exec bashcov -- bats -r .
-      - name: Upload reports to Codecov
-        run: |
-          curl -Os https://uploader.codecov.io/latest/linux/codecov
-          chmod +x codecov
-          ./codecov -fcoverage/codecov-result.json
+      - uses: codecov/codecov-action@v3
