@@ -1,8 +1,7 @@
 #! /usr/bin/env bats
 setup() {
-	load /usr/lib/bats-support/load.bash
-	load /usr/lib/bats-assert/load.bash
-	cd "$(dirname "$BATS_TEST_FILENAME")/.." || exit
+  cd "$(dirname "$BATS_TEST_FILENAME")/.." || exit
+  . test/setup.sh
 }
 
 @test help {
